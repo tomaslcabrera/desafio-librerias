@@ -23,4 +23,4 @@ let stockProductos = [
     {id: 22, nombre: "Sonido 4", tipo: "Sonido", cantidad: 1, desc: "Los mejores Auriculares del mercado", precio: 5600, img: './img/sonido.jpg'},
     {id: 23, nombre: "Sonido 5", tipo: "Sonido", cantidad: 1, desc: "Los mejores Auriculares del mercado", precio: 1700, img: './img/sonido.jpg'},
     {id: 24, nombre: "Sonido 6", tipo: "Sonido", cantidad: 1, desc: "Los mejores Auriculares del mercado", precio: 800, img: './img/sonido.jpg'},
-]
+];
