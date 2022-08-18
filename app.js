@@ -41,9 +41,20 @@ stockProductos.forEach((producto) => {
 
     const boton = document.getElementById(`agregar${producto.id}`);
 
+    /*Desafio Libreria*/ 
+
     boton.addEventListener('click', () => {
+        if(producto.cantidad>0){
         agregarAlCarrito(producto.id);
-    })
+        producto.cantidad-=1;
+        }else{
+        Swal.fire({
+        icon: 'error',
+        title: 'Oops...',
+        text: 'Out of Stock!',
+        })
+        }
+        })
 })
 
 const agregarAlCarrito = (prodId) => {
@@ -70,7 +81,6 @@ const eliminarDelCarrito = (prodId) => {
     const indice = carrito.indexOf(item);
 
     carrito.splice(indice, 1); 
-
     actualizarCarrito(); 
     console.log(carrito);
 }
